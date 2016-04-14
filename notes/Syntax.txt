@@ -1,0 +1,97 @@
+import java.io.*;
+import java.util.*;
+
+class Solution {
+
+    static int solveMeSecond(int a, int b) {
+        return a+b;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int t;
+        int sum;
+        int a,b;
+        t = in.nextInt();
+        for (int i=0;i<t;i++) {
+            a = in.nextInt();
+            b = in.nextInt();
+            sum = solveMeSecond(a, b);
+            System.out.println(sum);
+        }
+    }
+}
+
+1 2 3 4 5
+
+
+/* IMPORTANT: Multiple classes and nested static classes are supported */
+
+/*
+ * uncomment this if you want to read input.
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+*/
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        /*
+         * Read input from stdin and provide input before running
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String line = br.readLine();
+        int N = Integer.parseInt(line);
+        for (int i = 0; i < N; i++) {
+            System.out.println("hello world");
+        }
+        */
+
+        System.out.println("Hello World!");
+    }
+}
+
+import java.io.*;
+import java.util.*;
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        Scanner in = new Scanner(System.in);
+        long person,ball;
+        int line = in.nextInt();
+        for (int i=0;i<line;i++) {
+            int nums = in.nextInt();
+            long num = in.nextLong();
+            int xor1 = 0;
+            int and1 = 0;
+            for (int j=0;i<nums-1;j++){
+            	long num1 = in.nextLong();
+            	xor1 = num ^ num1;
+            	and1 = num & num1;
+            	num = num1;
+            }
+            System.out.println(xor1 | and1);
+        	}
+        	
+        }
+    }
+}
+
+
+
+Standard Input and output
+
+
+import java.util.Scanner;  
+class ScannerTest{  
+ public static void main(String args[]){  
+   Scanner sc=new Scanner(System.in);  
+     
+   System.out.println("Enter your rollno");  
+   int rollno=sc.nextInt();  
+   System.out.println("Enter your name");  
+   String name=sc.next();  
+   System.out.println("Enter your fee");  
+   double fee=sc.nextDouble();  
+   System.out.println("Rollno:"+rollno+" name:"+name+" fee:"+fee);  
+   sc.close();  
+ }  
+}   
